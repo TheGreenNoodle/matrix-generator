@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matrix Generator</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <hgroup>
+      <h1>Welcome To Matrix Generator!</h1>
+      <h4>Please enter the number of columns and rows to generate a matrix of random numbers.</h4>  
+    </hgroup>
+
+    <hr/>
+
+    <h5>**Be careful to not enter to big of values!! May crash computer 1-10 range recommend!!!**</h5>
+    <form onsubmit="return false;" method="post" name="cols-and-rows">
+      <fieldset>
+        <label for="rows">Rows</label>
+        <input type="number" id="rows" value="" />
+      </fieldset>
+      <fieldset>
+        <label for="columns">Columns</label>
+        <input type="number" id="columns" value="">
+      </fieldset>
+
+      <button type="submit" name="submit" onclick="index()">Submit</button>
+    </form>
+
+    <div id="table-wrapper"></div>
+
+	<script src="index.js"></script>
+  </body>
+</html>
